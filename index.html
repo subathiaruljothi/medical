@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assests/images/about.jpg">
     <title>Medical</title>
     <!-- css -->
      <link rel="stylesheet" href="assests/css/style.css">
@@ -15,10 +16,16 @@
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+     <!-- aos -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
+  <script>
+    AOS.init();
+  </script>
 <!-- header start -->
-<header>
+<header class="sticky-top">
     <nav class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">Medilab</a>
@@ -26,24 +33,24 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="home">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="services">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="departments">Departments</a>
+                <a class="nav-link" href="#departments">Departments</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="doctors">Doctors</a>
+                <a class="nav-link" href="#doctors">Doctors</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact">Contacts</a>
+                <a class="nav-link" href="#contact">Contacts</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -91,14 +98,14 @@
     </div>
 </div> -->
 <!-- banner end -->
-<div class="banner light-background">
+<div class="banner light-background" id="home">
   <div class="container">
-    <div class="welcome">
+    <div class="welcome" data-aos="fade-down-right">
       <h2>WELCOME TO MEDILAB</h2>
       <p>We are team of talented designers making websites with Bootstrap</p>
   </div>
     <div class="row menu">
-      <div class="col-4 why">
+      <div class="col-4 why" data-aos="fade-down-right">
         <h3>Why Choose Medilab?</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
         </p>
@@ -110,17 +117,17 @@
       </div>
       <div class="col-8">
         <div class="row body">
-          <div class="col-4 menu-body">
+          <div class="col-4 menu-body" data-aos="fade-down-right">
             <i class="bi bi-journal-medical"></i>
             <h4>Corporis voluptates officia eiusmod</h4>
             <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
           </div>
-          <div class="col-4 menu-body">
+          <div class="col-4 menu-body" data-aos="fade-down-right">
             <i class="bi bi-gem"></i>
             <h4>Ullamco laboris ladore pan</h4>
             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
           </div>
-          <div class="col-4 menu-body">
+          <div class="col-4 menu-body" data-aos="fade-down-right">
             <i class="bi bi-inboxes"></i>
             <h4>Labore consequatur incidid dolore</h4>
             <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
@@ -132,7 +139,7 @@
 </div>
 <!-- banner end -->
 <!-- about start -->
-<div class="about">
+<div id="about" class="about">
   <div class="container">
     <div class="row">
       <div class="col-6 video">
@@ -217,6 +224,70 @@
     </div>
   </div>
 </div>  
-<!-- status end -->
+<!-- status end-->
+<!-- service start -->
+<div id="services" class="service">
+  <div class="container">
+    <div class="title">
+      <h2>Services</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
+    <div class="row">
+      <div class="col-4 body">
+        <div class="icon">
+          <i class="bi bi-heart-pulse-fill"></i>
+        </div>
+        <div class="text">
+          <h3>Nesciunt Mete</h3>
+        <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+        </div>
+      </div>
+      <div class="col-4 body">
+        <div class="icon">
+          <i class="bi bi-capsule-pill"></i>
+        </div>
+        <div class="text">
+          <h3>Eosle Commodi</h3>
+          <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+        </div>
+      </div>
+      <div class="col-4 body">
+        <div class="icon">
+          <i class="bi bi-person-square"></i>
+        </div>
+        <div class="text">
+          <h3>Ledo Markt</h3>
+        <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+        </div>
+      </div>
+      <div class="col-4 body">
+        <div class="icon">
+          <i class="bi bi-hourglass-top"></i>
+        </div>
+        <div class="text">
+          <h3>Asperiores Commodit</h3>
+        <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+        </div>
+      </div>
+      <div class="col-4 body">
+        <div class="icon">
+          <i class="bi bi-person-wheelchair"></i>
+        </div>
+        <div class="text"><h3>Velit Doloremque</h3>
+          <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p></div>
+      </div>
+      <div class="col-4 body">
+        <div class="icon">
+          <i class="bi bi-clipboard2-pulse"></i>
+        </div>
+        <div class="text">
+          <h3>Dolori Architecto</h3>
+        <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+ <!-- service end -->
 </body>
 </html>

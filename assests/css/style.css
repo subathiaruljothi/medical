@@ -24,11 +24,12 @@ header .navbar-nav{
 }
 header .nav-item .nav-link{
     color: #000000;
-    font-weight: bold;
+    font-weight: 500;
     margin: 0px 20px;
+    padding: 0px 0px 0px 0px;
     transition: border-bottom 0.9s;
     &&:hover{
-        border-bottom: 2px solid #1977cc;
+        border-bottom: 3px solid #1977cc;
         color: #1977cc;
     }
 }
@@ -39,6 +40,9 @@ header .d-flex .btn{
     font-weight: bold;
     color: #ffffff;
     padding: 6px 22px;
+    &&:hover{
+        opacity: 0.8;
+    }
 }
 /* header end */
 /* banner start */
@@ -98,7 +102,7 @@ header .d-flex .btn{
 .banner .menu .menu-body{
     text-align: center;
     border-radius: 12px;
-    background: color-mix(in srgb, var(--surface-color), transparent 20%);
+    background: color-mix(in srgb, white 72%, transparent 20%);
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     padding: 28px 0px 30px 0px;
     margin: 56px 0px 0px 19px;
@@ -240,3 +244,95 @@ header .d-flex .btn{
     font-size: 17px;
 }
 /* status end */
+/* service start */
+.service{
+    padding: 70px 0px 40px 0px;
+    font-family: "Old Standard TT", serif;
+}
+.service .title{
+    text-align: center;
+}
+.service .title h2{
+    color: #2c4964;
+    font-size: 40px;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(190, 187, 187, 0.938);
+    margin: auto;
+    width: fit-content;
+    position: relative;
+}
+.service .title h2::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: -2px;
+    left: 39px;
+    right: 40px;
+    border-bottom: 3px solid #1977cc;
+}
+.service .title p{
+    font-size: 17px;
+    font-weight: 600;
+    margin: 20px 0px 30px 0px;
+}
+.service .body{
+    text-align: center;
+    margin: 60px 38px 0px 0px;
+    border: 1px solid rgba(190, 187, 187, 0.938);
+    width: 30%;
+    padding: 41px 16px 82px 16px;
+    cursor: pointer;
+    transition: background-color 0.9s,border 0.9s;
+}
+.service .body:hover{
+    background-color: #1977cc;
+    border: 2px solid #1569b3;
+}
+.service .body .icon{
+    margin: 30px 0px 10px 0px;
+    background-color: #1977cc;
+    width: 21%;
+    height: 27%;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+    box-shadow: -11px -8px 0px #d1e4f5;
+    transition: background-color 0.9s,box-shadow 0.9s;
+}
+.service .body:hover .icon{
+    background-color: #ffffff;
+    box-shadow: -11px -8px 0px #5ea0db;
+}
+.service .body .icon i{
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: color 0.9s;
+}
+.service .body:hover i{
+    color: #1977cc;
+}
+.service .body .text h3{
+    font-size: 24px;
+    color: #2c4964;
+    font-weight: bold;
+    margin: 13px 0px;
+    cursor: pointer;
+    transition: color 0.9s;
+}
+.service .body:hover h3{
+    color: #ffffff;
+}
+.service .body .text p{
+    font-size: 17px;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.9s;
+}
+.service .body:hover p{
+    color: #ffffff;
+}
+/* service end */
